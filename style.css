@@ -1,5 +1,28 @@
 body {
 	background-color: #A52A2A;
+	font : 15px/1.5 Arial, Helvetica, sans-serif;
+	padding :0;
+	margin:0;
+
+
+}
+/*global */
+.container {
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+	color:#ffffff;
+
+}
+
+/*header*/
+
+header {
+	background :#FF5733;
+	color :#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#35424a 3px solid;
 }
 
 #titre1 {
