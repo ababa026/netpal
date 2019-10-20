@@ -6,6 +6,7 @@ body {
 
 
 }
+
 /*global */
 .container {
 	width:80%;
@@ -25,6 +26,38 @@ header {
 	border-bottom:#35424a 3px solid;
 }
 
+header a {
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+
+header ul {
+	margin:0;
+	padding:0; 
+}
+
+
+header li {
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #advertising{
+	float:left;
+}
+
+header #advertising h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
 #titre1 {
 	text-align: center;
 	color:white;
