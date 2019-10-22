@@ -1,0 +1,45 @@
+body {
+	background-color: #A52A2A;
+}
+
+#titre1 {
+	text-align: center;
+	color:white;
+}
+
+IMG.logo {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+#img1_title {
+	color: white;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+    background: pink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+}
+
+#blocktext1 {
+	color: white;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+    background: pink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+}
+
+#fin {
+	color: yellow;
+	background-color: white;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
