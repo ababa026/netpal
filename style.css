@@ -1,17 +1,16 @@
 body {
 	background-color: #A52A2A;
-	font : 15px/1.5 Arial, Helvetica, sans-serif;
+	font : 15px/1.5 Quicksand, Poppins, sans-serif;
 	padding :0;
 	margin:0;
 
 
 }
 /*global */
-.container {
+.box {
 	width:80%;
 	margin:auto;
 	overflow: hidden;
-	color:#ffffff;
 
 }
 
@@ -25,6 +24,36 @@ header {
 	border-bottom:#35424a 3px solid;
 }
 
+header a{
+	color:white;
+	text-decoration:none;
+	font-size:16px; 
+	padding-left:20px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li {
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #advertising{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	padding-right:20px;
+}
 #titre1 {
 	text-align: center;
 	color:white;
@@ -52,4 +81,33 @@ IMG.logo {
 	color: yellow;
 	background-color: white;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/********MENU BAR************/
+.menu_top{
+	background-color: #DB0028;
+	overflow: hidden;
+	width:100%;
+	height:65px;
+}
+
+.menu_top a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	height:100%
+}
+
+.menu_top a:hover {
+	background-color: white;
+	color: #DB0028;
+}
+
+.menu_top a.active{
+	background-color: #8f001a;
+	border: 0.5px solid #8f001a;
+	color: white;	
 }
