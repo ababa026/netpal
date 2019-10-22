@@ -1,6 +1,10 @@
 body {
 	background-color: #A52A2A;
+<<<<<<< HEAD
 	font : 15px/1.5 Arial, Helvetica, sans-serif;
+=======
+	font-family:'Quicksand', 'Poppins', sans-serif;
+>>>>>>> 956a4c1f7d5b1a30775646734c75186ab04c7af9
 	padding :0;
 	margin:0;
 
