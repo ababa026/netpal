@@ -1,10 +1,6 @@
 body {
 	background-color: #A52A2A;
-<<<<<<< HEAD
-	font : 15px/1.5 Arial, Helvetica, sans-serif;
-=======
-	font-family:'Quicksand', 'Poppins', sans-serif;
->>>>>>> 956a4c1f7d5b1a30775646734c75186ab04c7af9
+	font : 15px/1.5 Quicksand, Poppins, sans-serif;
 	padding :0;
 	margin:0;
 
@@ -32,6 +28,7 @@ header a{
 	color:white;
 	text-decoration:none;
 	font-size:16px; 
+	padding-left:20px;
 }
 
 header ul{
@@ -55,6 +52,7 @@ header #branding h1{
 
 header nav{
 	float:right;
+	padding-right:20px;
 }
 #titre1 {
 	text-align: center;

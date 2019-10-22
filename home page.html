@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <header class="menu_top" id="menu_top1">
         <a href="home page.html" class="active">Net-Pal</a>
-	<a href="pricing.html">Pricing</a>
-	<a href="product.html">Product</a>
-	<a href="about.html">About Us</a>
+    <nav>
+    	<a href="pricing.html">Pricing</a>
+		<a href="product.html">Product</a>
+		<a href="about.html">About Us</a>
+	</nav>
+
     </header>
 
     <section id="showcase">
@@ -29,9 +33,10 @@
     <section id="newsletter">
       <div class="container">
         <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email...">
-          <button type="submit" class="button_1">Subscribe</button>
+        <div id ="error"></div>
+        <form ID ="form" action = "/" method = "GET">
+          <input id ="email" name="email" type="text" required>
+          <button type="submit" >Subscribe</button>
         </form>
       </div>
     </section>
