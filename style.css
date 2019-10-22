@@ -14,6 +14,15 @@ body {
 
 }
 
+header a img {
+	width:100px;
+	height:100px;
+	position : relative;
+	top:-50px;
+	border : 1px solid black;
+
+}
+
 /*header*/
 
 header {
