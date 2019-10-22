@@ -84,3 +84,32 @@ IMG.logo {
 	background-color: white;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+/********MENU BAR************/
+.menu_top{
+	background-color: #DB0028;
+	overflow: hidden;
+	width:100%;
+	height:65px;
+}
+
+.menu_top a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	height:100%
+}
+
+.menu_top a:hover {
+	background-color: white;
+	color: #DB0028;
+}
+
+.menu_top a.active{
+	background-color: #8f001a;
+	border: 0.5px solid #8f001a;
+	color: white;	
+}
