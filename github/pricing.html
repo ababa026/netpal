@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:500,600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="menu_top" id="menu_top1">
+  <a href="home page.html" >Net-Pal</a>
+	<a href="pricing.html" class="active">Pricing</a>
+	<a href="product.html">Product</a>
+	<a href="about.html">About Us</a>
+</header>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Meal preparation</h2>
+    <p>You do not have time to cook, pay someone to cook for you ...</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Dog walking</h2>
+    <p> You do not have time to walk your dog, get in touch with somenone and you do not have to worry about it anymore.</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2> Tutoring</h2>
+    <p> Mid-terms are approching and you do not understand a thing, contact a master/phd student and get A+ in your exams.</p>
+  </div>
+</div>
+
+</body>
+</html>
