@@ -1,5 +1,5 @@
 body {
-	background-color: #ffffff;
+	background-color: #e6e6e6F;
 	font : 15px/1.5 Quicksand, Poppins, sans-serif;
 	padding :0;
 	margin:0;
@@ -30,18 +30,18 @@ ul{
 
 .button_1{
 	height:38px;
-	background:#a8491d;
+	background:#990000;
 	border:0;
 	padding-left: 20px;
 	padding-right: 20px;
-	color:#ffffff;
+	color:#e6e6e6;
 }
 
 /*header*/
 
 header {
-	background :#FF5733;
-	color :#ffffff;
+	background :#990000;
+	color :#e6e6e6;
 	padding-top:30px;
 	min-height:70px;
 	border-bottom:#35424a 3px solid;
@@ -91,9 +91,21 @@ header a:hover{
 
 /* lumieres */
 #lumieres {
-	min-height:400px;
-	background:url("freelance.jpg") no-repeat 0 -400px;
-	text-align:center;
+	width: 100%;
+  	padding: 0 0%;
+  	display: table;
+  	margin: 0;
+  	max-width: none;
+  	height: 70vh;
+    background-image:url("background.jpg");
+    background-repeat:no-repeat;
+  	background-size:cover;
+  	text-align:center;
+  	}
+
+  section:nth-of-type(2n) {
+    background-color: #FE4B74;
+    background-image:url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350");
 
 }
 
@@ -107,6 +119,20 @@ header a:hover{
 	font-size:20px;
 }
 
+#lumieres .boite{
+	color:#e6e6e6;
+	width: 100%;
+  	padding: 0 0%;
+  	display: table;
+  	margin: 0;
+  	max-width: none;
+  	height: 70vh;
+    background-image:url("background.jpg");
+    background-repeat:no-repeat;
+  	background-size:cover;
+  	text-align:center;
+}
+	
 #newsletter{
 	padding:15px;
 	color:#ffffff;
@@ -150,67 +176,8 @@ header a:hover{
 footer{
 	padding:20px;
 	margin-top:20px;
-	color:#ffffff;
-	background-color:#e8491d;
+	color:#e6e6e6;
+	background-color:#990000;
 	text-align:center;
 }
-}
-/*global */
 
-#titre1 {
-	text-align: center;
-	color:white;
-}
-
-IMG.logo {
-	display: block;
-	margin-left: auto;
-    margin-right: auto;
-}
-
-#blocktext {
-	color: white;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	margin: 0;
-    background: pink;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-}
-
-#fin {
-	color: yellow;
-	background-color: white;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-/********MENU BAR************/
-.menu_top{
-	background-color: #DB0028;
-	overflow: hidden;
-	width:100%;
-	height:65px;
-}
-
-.menu_top a {
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 20px 16px;
-	text-decoration: none;
-	font-size: 20px;
-	height:100%
-}
-
-.menu_top a:hover {
-	background-color: white;
-	color: #DB0028;
-}
-
-.menu_top a.active{
-	background-color: #8f001a;
-	border: 0.5px solid #8f001a;
-	color: white;	
-}
