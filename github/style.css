@@ -1,0 +1,187 @@
+body {
+	background-color: #e6e6e6F;
+	font : 15px/1.5 Quicksand, Poppins, sans-serif;
+	padding :0;
+	margin:0;
+
+
+}
+/*global */
+.boite {
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+
+}
+
+img.icon{
+	border-radius: 50%;
+}
+
+header a img {
+	width:100px;
+	height:100px;
+	position : relative;
+	top:-50px;
+	border : 1px solid black;
+
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+.button_1{
+	height:38px;
+	background:#990000;
+	border:0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#e6e6e6;
+}
+
+/*header*/
+
+header {
+	background :#990000;
+	color :#e6e6e6;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#35424a 3px solid;
+}
+
+header a{
+	color:white;
+	text-decoration:none;
+	font-size:16px; 
+	padding-left:20px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li {
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #titre{
+	float:left;
+}
+
+header #titre h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	padding-right:20px;
+}
+
+header .highlight, header .current a{
+	color:#e8491d;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight:bold;
+}
+
+
+/* lumieres */
+#lumieres {
+	width: 100%;
+  	padding: 0 0%;
+  	display: table;
+  	margin: 0;
+  	max-width: none;
+  	height: 70vh;
+    background-image:url("background.jpg");
+    background-repeat:no-repeat;
+  	background-size:cover;
+  	text-align:center;
+  	}
+
+  section:nth-of-type(2n) {
+    background-color: #FE4B74;
+    background-image:url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350");
+
+}
+
+#lumieres h1{
+	margin-top:100px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+
+#lumieres p{
+	font-size:20px;
+}
+
+#lumieres .boite{
+	color:#ffffff;
+	width: 100%;
+  	padding: 0 0%;
+  	display: table;
+  	margin: 0;
+  	max-width: none;
+  	height: 70vh;
+    background-image:url("background.jpg");
+    background-repeat:no-repeat;
+  	background-size:cover;
+  	text-align:center;
+}
+	
+#newsletter{
+	padding:15px;
+	color:#ffffff;
+	background:#35424a;
+}
+
+#newsletter h1{
+	float:left;
+}
+
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+
+#newsletter input[type = "email"]{
+	padding:4px;
+	height:25px;
+	width:250px;
+}
+
+
+/*grande_boite*/
+#grande_boite{
+	margin-top: 20px;
+}
+
+
+#grande_boite .petite_boite{
+	float:left;
+	text-align:center;
+	width:33%;
+	padding:0px;
+}
+
+
+#grande_boite .petite_boite img{
+	width:90px;
+}
+
+footer{
+	padding:20px;
+	margin-top:20px;
+	color:#e6e6e6;
+	background-color:#990000;
+	text-align:center;
+}
+
