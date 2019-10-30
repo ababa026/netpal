@@ -1,82 +1,422 @@
-<!--DOCTYPE HTML-->
 <html>
-  <head>
     <title>Product Page</title>
-  </head>
-  <style>
-<!-- Basic layout colours -->
-body {background-color: CCCCFF;}
-h1   {color: 660033;}
-p    {color: 330066;}
-<!-- Button -->
-#title{
-background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
-  }
-  .row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+<body>
+<style>
+    .row {
+        display: flex;
+        padding: 0 4px;
+        flex-wrap: wrap;
+    }
+    .column_1{
+        flex-basis: 20%;
+        max-width: 20%;
+        padding: 10px;
+        background: white;
+        justify-content: space-around;
+    }
+    .column_2{
+        flex-basis: 20%;
+        max-width: 20%;
+        padding: 10px;
+        background: white;
+        justify-content: space-around;
+    }
+    .column_3{
+        flex-basis: 20%;
+        max-width: 20%;
+        padding: 10px;
+        background: white;
+        justify-content: space-around;
+    }
+    .column_4{
+        flex-basis: 20%;
+        max-width: 20%;
+        padding: 10px;
+        background: white;
+        justify-content: space-around;
+    }
+    .column img{
+        margin:10px 10px 10px 10px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    @media screen and (max-width:800px){
+        .column_1{
+            flex:50%
+            max-width:50%
+        }
+        .column_2{
+            flex:50%
+            max-width:50%
+        }
+        .column_3{
+            display:none;
+        }
+        .column_4{
+            display:none;
+        }
+    }
+    @media screen and (max-width:600px){
+        .column_1{
+            display:none;
+        }
+        .column_2{
+            display:none;
+        }
+        .column_3{
+            display:none;
+        }
+        .column_4{
+            display:none;
+        }
+    }
+    body{
+        background-image:linear-gradient(black,#A52A2A);
+    }
+    .card{
+    
+    }
+    .card .hover{
+        image: transparent;
+        background-image: linear-gradient(Blue,white);
+    }
+    .overlay-image {
+ position: relative;
+ width: 100%;
 }
-
-.column {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  max-width: 100%;
-  padding: 0 4px;
+/* Original image */
+.overlay-image .image {
+ display: block;
+ width: 100%;
+ height: auto;
 }
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+/* Original text overlay */
+.overlay-image .text {
+ color: #fff;
+ font-size: 30px;
+ line-height: 1.5em;
+ text-shadow: 2px 2px 2px #000;
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+.overlay-image .hover {
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ transition: .5s ease;
 }
+/* New overlay appearance on hover */
+.overlay-image:hover .hover {
+ opacity: 1;
 }
 </style>
-  <body>
-  <div class="row"> 
-  <div class="column">
-    <img src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2019/05/27/08/16/meal-plan-4232109_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2019/05/27/08/16/meal-plan-4232109_1280.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg" style="width:100%">
-    <img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg" style="width:100%">
-  </div>  
+<script>
+    
+</script>
+    <div class="row">
+        center
+        <div class="column_1">
+            <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Meal Prep</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Private Tutoring</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/05/27/08/16/meal-plan-4232109_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Meal Plan</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Laundry</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="column_2">
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Cram Session</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Meal Plan</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Laundry</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="column_3">
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Meal Prep</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Private Tutoring</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/05/27/08/16/meal-plan-4232109_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Meal Plan</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Laundry</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="column_4">
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Meal Prep</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Private Tutoring</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/05/27/08/16/meal-plan-4232109_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Meal Plan</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Dogwalking</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class=" overlay-image _9p ">
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
+                <div class=" normal _9s ">
+ 
+                 </div>
+            <div class=" hover _9r ">
+     <div class="text">Laundry</div>
+     <p></p>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
-    <h1 id="title">Take a look at the most Common Jobs</h1>
-    <h3>Dog-walking</h3>
-    <p>I mean this is self-explanatory but oh well. Because our services are connected to each student email, we have verified identities and you can easily get into contact with someone you can trust to walk your dog. We understand that sometimes you can't walk your dog, so pay another student to do it for you</p>
-    <h3>Meal Prep</h3>
-    <p>Let's be real here, food is expensive. You've had enough of ramen. As much as we love fast-food isn't doing you any good. Why don't you get meal-prepped by a student with a passion for cooking food. Go ahead and hire them to teach you all the ways.</p>
-    <h3>Tutoring</h3>
-    <p>Cause it's hard. It's just way too hard. You're not trying to spend 30 or more dollars for someone who is overqualified to teach you. I mean seriously, all you need is someone who's been there before or someone who's just finding it a breeze. Hire another student, it's cheaper and you're still going to pass.</p>
-  </body>
+</body>
 </html>
