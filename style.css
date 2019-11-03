@@ -1,4 +1,10 @@
 
+#canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
 .menu_top{
 	background-color: #DB0028;
 	overflow: hidden;
