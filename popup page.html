@@ -1,28 +1,64 @@
 <! DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
+ 
 .popup { 
   position: relative;
-  display: inline-block;
+  display: none;
+  width: 100%;
+  bottom: 50%;
+  left: 0;
+  top: 200;
+  height: 500%;
   cursor: pointer;
+  
 }
-.popup .popuptext {
 
-  width: 200px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+.popup-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 10px solid #888;
+  width: 80%
+
 }
+
+
 </style>
 </head>
 
-<div class="popup" onclick="myFunction()">Popup!
-<br>
-  <span class="popuptext" id="myPopup"> Subscribe to join our community</span>
+<body>
+<!-- create the popup -->
+<button id="myButton"> Home Page </button>
+
+<div id="myPopup" class="popup">
+
+  <!-- Modal content -->
+  <div class="popup-content">
+    <span class="close"> 
+</span>
+    <p style= "text-align: center;"> Register now for free and get an offer up to 5% on your first purchase !</p>
+  </div>
+
 </div>
+
+<script>
+
+var popup = document.getElementById("myPopup");
+
+var button = document.getElementById("myButton");
+
+var span = document.getElementsByClassName("close")[0];
+
+button.onclick = function() {
+  popup.style.display = "block";
+}
+span.onclick = function() {
+  popup.style.display = "none";
+}
+
+</script>
+</body>
 
 </html>
