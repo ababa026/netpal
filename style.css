@@ -1,4 +1,62 @@
-body {
+
+.menu_top{
+	background-color: #DB0028;
+	overflow: hidden;
+	height:75px;
+	position:fixed;
+	top:0;
+	width:100%;
+}
+
+.menu_top a{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	height:100%;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.menu_top a:hover,.button:hover{
+	background-color: white;
+	color: #DB0028;
+}
+
+.menu_top a.active{
+	background-color: #8f001a;
+	border: 0.5px solid #8f001a;
+	color: white;	
+}
+	
+.banniere{
+	font-family: 'Poppins', sans-serif;		
+	font-weight:bold;
+	font-size:70px;
+	height:38%;
+	padding-top:80px;
+	color:white;
+	margin-top:70px;
+	margin-bottom:50px;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/uo_campus.png');
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+
+
+
+body{
+	font-family: 'Quicksand', sans-serif;
+	background-color:#F9F9F9;
+	margin:0;
+	padding:0;
+}
+
+
+
+
+/*body {
 	background-color: #e6e6e6F;
 	font : 15px/1.5 Quicksand, Poppins, sans-serif;
 	padding :0;
