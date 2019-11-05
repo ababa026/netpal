@@ -1,28 +1,77 @@
 <! DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
+ 
 .popup { 
   position: relative;
-  display: inline-block;
+  display: none;
   cursor: pointer;
+  
 }
-.popup .popuptext {
 
-  width: 200px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+.popup-content {
+  background-color: #ffffff;
+  margin: 20% auto;
+  padding: 20 %;
+  border-style: solid ;
+  border-width: 2px 2px 2px 2px;
+  height: 600;
+  width: 1100;
+  
+  
+
 }
+img {
+  float: left;
+}
+p{
+  vertical-align: middle;
+  float: right;  
+  padding-top: 15%;
+
+}
+
+ 
+
 </style>
 </head>
 
-<div class="popup" onclick="myFunction()">Popup!
-<br>
-  <span class="popuptext" id="myPopup"> Subscribe to join our community</span>
+<body>
+<!-- create the popup -->
+<button id="myButton"> Home Page </button>
+
+<div id="myPopup" class="popup">
+
+  <!-- Modal content -->
+  <div class="popup-content">
+    <span class="close">&times;
+</span>
+	<img src=" https://www.uottawa.ca/this-is-uottawa/sites/www.uottawa.ca.this-is-uottawa/files/campus-footbridge.jpg" ><font size="20">
+    <p style= "text-align: right;">  Register now for free <br>
+	and get an offer up to  
+<br>	10%
+<br>  on your first purchase! </font> </p>
+  </div>
+
 </div>
+
+<script>
+
+var popup = document.getElementById("myPopup");
+
+var button = document.getElementById("myButton");
+
+var span = document.getElementsByClassName("close")[0];
+
+button.onclick = function() {
+  popup.style.display = "block";
+}
+span.onclick = function() {
+  popup.style.display = "none";
+}
+
+</script>
+</body>
 
 </html>
