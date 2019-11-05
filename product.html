@@ -2,6 +2,13 @@
     <title>Product Page</title>
 <body>
 <style>
+    .Header {
+        padding: 60px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 30px;
+    }
     .row {
         display: flex;
         padding: 0 4px;
@@ -42,12 +49,12 @@
     }
     @media screen and (max-width:800px){
         .column_1{
-            flex:50%
-            max-width:50%
+            flex:40% !important;
+            max-width:40% !important;
         }
         .column_2{
-            flex:50%
-            max-width:50%
+            flex:40% !important;
+            max-width:40% !important;
         }
         .column_3{
             display:none;
@@ -58,7 +65,8 @@
     }
     @media screen and (max-width:600px){
         .column_1{
-            display:none;
+            flex:100% !important;
+            max-width:100% !important;
         }
         .column_2{
             display:none;
@@ -115,12 +123,35 @@
 .overlay-image:hover .hover {
  opacity: 1;
 }
+form{
+    background-color: #42f598;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
 </style>
 <script>
     
 </script>
+    <div class="Header">
+        <h1>Product Features Page</h1>
+        <p>Currently in Demo will be updated to include full running features once funding is secured, please invest :)</p>
+    </div>
+    <form>
+        First name:<br>
+        <input type="text" name="name" value="Insert your full name"><br>
+        Last name:<br>
+        <input type="text" name="tags" value="Insert tags, split by commas. Avoid special characters"><br><br>
+        Insert Image:<br>
+        <input type="text" name="image" value="Insert image file here"><br><br>
+        In order to search please fill only the boxes below and then click submit<br>
+        <input type="text" name="filter" value="use keywords to filter options"><br><br>
+        <input type="submit" value="Submit">
+    </form>
     <div class="row">
-        center
         <div class="column_1">
             <div class="card">
                 <div class=" overlay-image _9p ">
@@ -129,8 +160,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
-     <p></p>
+     <div class="text">Dogwalking $18/h</div>
             </div>
         </div>
         </div>
@@ -141,8 +171,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Meal Prep</div>
-     <p></p>
+     <div class="text">Meal Prep $30 4 meals</div>
             </div>
         </div>
         </div>
@@ -150,11 +179,9 @@
                 <div class=" overlay-image _9p ">
                 <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Private Tutoring</div>
-     <p></p>
+     <div class="text">Private Tutoring $20 hour</div>
             </div>
         </div>
         </div>
@@ -165,8 +192,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Meal Plan</div>
-     <p></p>
+     <div class="text">Meal Plan $70 Dinner all week</div>
             </div>
         </div>
         </div>
@@ -177,8 +203,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
-     <p></p>
+     <div class="text">Dogwalking 12$ hour</div>
             </div>
         </div>
         </div>
@@ -189,7 +214,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Laundry</div>
+     <div class="text">Laundry $10</div>
      <p></p>
             </div>
         </div>
@@ -203,8 +228,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Cram Session</div>
-     <p></p>
+     <div class="text">Cram Session $30 session</div>
             </div>
         </div>
         </div>
@@ -215,8 +239,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
-     <p></p>
+     <div class="text">Dogwalking $14</div>
             </div>
         </div>
         </div>
@@ -227,7 +250,7 @@
  
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
+     <div class="text">Dogwalking $21</div>
      <p></p>
             </div>
         </div>
@@ -237,21 +260,20 @@
                 <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
                 <div class=" normal _9s ">
  
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Meal Plan</div>
+     <div class="text">Laundry $9.50</div>
      <p></p>
             </div>
         </div>
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
+     <div class="text">Dogwalking $16 hour</div>
      <p></p>
             </div>
         </div>
@@ -260,10 +282,9 @@
                 <div class=" overlay-image _9p ">
                 <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Laundry</div>
+     <div class="text">Laundry 7$</div>
      <p></p>
             </div>
         </div>
@@ -272,48 +293,44 @@
     <div class="column_3">
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2013/07/12/18/20/chucks-153310_1280.png"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
+     <div class="text">Sneakers 50$ new</div>
      <p></p>
             </div>
         </div>
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Meal Prep</div>
+     <div class="text">Cooking Class 25$ session</div>
      <p></p>
             </div>
         </div>
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2014/10/11/16/39/books-484766_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Private Tutoring</div>
+     <div class="text">Textbook Exchange Negotiable</div>
      <p></p>
             </div>
         </div>
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/05/27/08/16/meal-plan-4232109_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2014/05/03/01/02/concert-336695_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Meal Plan</div>
+     <div class="text">Concert Tickets $28</div>
      <p></p>
             </div>
         </div>
@@ -322,8 +339,7 @@
                 <div class=" overlay-image _9p ">
                 <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
      <div class="text">Dogwalking</div>
      <p></p>
@@ -332,12 +348,11 @@
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2016/08/09/23/44/panda-1582180_1280.png" style="width:100%"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Laundry</div>
+     <div class="text">Panda Tickets Available</div>
      <p></p>
             </div>
         </div>
@@ -346,12 +361,11 @@
     <div class="column_4">
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/10/17/20/59/poodle-4557830_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/08/09/23/44/panda-1582180_1280.png"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
+     <div class="text">Panda Tickets 3 for 80$</div>
      <p></p>
             </div>
         </div>
@@ -360,11 +374,9 @@
                 <div class=" overlay-image _9p ">
                 <img class=" image _9q " src="https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Meal Prep</div>
-     <p></p>
+     <div class="text">Grocery shopping Negotiate Price</div>
             </div>
         </div>
         </div>
@@ -372,47 +384,39 @@
                 <div class=" overlay-image _9p ">
                 <img class=" image _9q " src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
      <div class="text">Private Tutoring</div>
-     <p></p>
             </div>
         </div>
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/05/27/08/16/meal-plan-4232109_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2017/07/31/17/03/mannequin-2559010_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Meal Plan</div>
-     <p></p>
+     <div class="text">BAPE Hoodie 180$</div>
             </div>
         </div>
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2019/06/08/05/32/dog-4259565_1280.jpg"/>
+                <img class=" image _9q " src="https://cdn.pixabay.com/photo/2015/06/08/15/02/pug-801826_1280.jpg"/>
                 <div class=" normal _9s ">
- 
-                 </div>
+                </div>
             <div class=" hover _9r ">
-     <div class="text">Dogwalking</div>
-     <p></p>
+     <div class="text">Dogwalking $13 hour</div>
             </div>
         </div>
         </div>
         <div class="card">
                 <div class=" overlay-image _9p ">
-                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2014/08/08/20/54/laundry-413688__480.jpg" style="width:100%"/>
+                <img class=" image _9q " img src="https://cdn.pixabay.com/photo/2015/12/09/11/43/students-1084597_1280.jpg" style="width:100%"/>
                 <div class=" normal _9s ">
- 
                  </div>
             <div class=" hover _9r ">
-     <div class="text">Laundry</div>
-     <p></p>
+     <div class="text">Study Group MAT1320</div>
             </div>
         </div>
         </div>
