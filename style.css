@@ -24,14 +24,7 @@ body{
 
 
 
-/*body {
-	background-color: #e6e6e6F;
-	font : 15px/1.5 Quicksand, Poppins, sans-serif;
-	padding :0;
-	margin:0;
 
-
-}
 /*global */
 .boite {
 	width:80%;
@@ -173,7 +166,7 @@ header a:hover{
   	margin: 0;
   	max-width: none;
   	height: 70vh;
-    background-image:url("background.jpg");
+    background-image:url("img/background.jpg");
     background-repeat:no-repeat;
   	background-size:cover;
   	text-align:center;
