@@ -38,12 +38,8 @@ p{
 </head>
 
 <body>
-<!-- create the popup -->
-<button id="myButton"> Home Page </button>
 
-<div id="myPopup" class="popup">
-
-  <!-- Modal content -->
+  <!-- Popup content -->
   <div class="popup-content">
     <span class="close">&times;
 </span>
@@ -60,12 +56,10 @@ p{
 
 var popup = document.getElementById("myPopup");
 
-var button = document.getElementById("myButton");
 
 var span = document.getElementsByClassName("close")[0];
 
-button.onclick = function() {
-  popup.style.display = "block";
+
 }
 span.onclick = function() {
   popup.style.display = "none";
