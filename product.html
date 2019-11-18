@@ -158,9 +158,20 @@ form{
 .my-form label{
 	display:block;
 }
-.my-form input{
+.my-form input[type="text"]{
 	padding: 8px;
 	width:100%;
+}
+.my-form input[type="submit"]{
+	background-color: #87260D;
+	color:#fff;
+	padding:10px 15px;
+	border: none;
+
+}
+.my-form input[type="submit"]:hover{
+	background:#757372;
+	color:#333;
 }
 /*end*/
 input[type=text] {
@@ -186,8 +197,8 @@ input[type=text] {
         <label>Select image file:</label>
         <input type="text" class="form-group" name="image" value="Insert image file here"><br>
         <label>Choose categorie:</label>
-        <input type="text" class="form-group" name="filter" value="use keywords to filter options"><br><br>
-        <input type="submit" value="Submit">
+        <input type="text" class="form-group" name="filter" value="Use keywords to filter options"><br>
+        <input type="submit" class="button" value="Submit">
     </form>
     <div class="row">
         <div class="column_1">
