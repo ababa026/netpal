@@ -217,6 +217,12 @@ footer{
 	margin-top:10px;
 	color:#e6e6e6;
 	background-color:#990000;
+
+}
+
+.footer .foot{
+	width: 45%;
+	float: left;
 }
 
 .footer_2 {
@@ -405,3 +411,5 @@ input{
   }
 }
 }
+
+ 
