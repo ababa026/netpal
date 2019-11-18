@@ -20,44 +20,57 @@
     </header>
 <style>
     .Header {
-        padding: 60px;
+        padding: 15px;
         text-align: center;
-        background: #1abc9c;
+        background: #DB612C;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
     }
     .row {
         display: flex;
         padding: 0 4px;
         flex-wrap: wrap;
+        text-align: center;
     }
     .column_1{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column_2{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column_3{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column_4{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column img{
         margin:10px 10px 10px 10px;
@@ -103,7 +116,8 @@
     }
     .card .hover{
         image: transparent;
-        background-image: linear-gradient(Blue,white);
+        background-image: linear-gradient(#aab6c8,white);
+
     }
     .overlay-image {
  position: relative;
@@ -147,8 +161,8 @@ form{
 .my-form{
 	padding-top:20px;
 	padding-bottom: 20px;
-	padding-right: 500px;
-	padding-left: 500px;
+	padding-right: 400px;
+	padding-left: 400px;
 }
 
 .my-form .form-group{
@@ -160,14 +174,20 @@ form{
 }
 .my-form input[type="text"]{
 	padding: 8px;
-	width:100%;
+	width:100%;à
+
 }
 .my-form input[type="submit"]{
 	background-color: #87260D;
 	color:#fff;
 	padding:10px 15px;
 	border: none;
+	width: 140px;
+	text-align: center;
 
+}
+.buttonHolder{
+	text-align: center;
 }
 .my-form input[type="submit"]:hover{
 	background:#757372;
@@ -179,27 +199,13 @@ input[type=text] {
   padding: 12px 10px;
   margin: 8px 0;
   box-sizing: border-box;
+
 }
 </style>
 <script>
     
 </script>
-    <div class="Header">
-        <h1>Product Features Page</h1>
-        <p>Currently in Demo will be updated to include full running features once funding is secured, please invest :)</p>
-    </div>
-    <form class="my-form">
-    	<label>Full name:</label>
-        <!--First name:<br>-->
-        <input type="text" class="form-group" name="name" value="Insert your full name">
-        <label>Full name:</label>
-        <input type="text" class="form-group" name="tags" value="Insert tags, split by commas. Avoid special characters">
-        <label>Select image file:</label>
-        <input type="text" class="form-group" name="image" value="Insert image file here"><br>
-        <label>Choose categorie:</label>
-        <input type="text" class="form-group" name="filter" value="Use keywords to filter options"><br>
-        <input type="submit" class="button" value="Submit">
-    </form>
+   
     <div class="row">
         <div class="column_1">
             <div class="card">
@@ -471,5 +477,24 @@ input[type=text] {
         </div>
     </div>
 </div>
+ 
+    <form class="my-form">
+    	<label>Full name:</label>
+        <!--First name:<br>-->
+        <input type="text" class="form-group" name="name" placeholder="Insert your full name">
+        <label>Full name:</label>
+        <input type="text" class="form-group" name="tags" placeholder="Insert tags, split by commas. Avoid special characters">
+        <label>Select image file:</label>
+        <input type="text" class="form-group" name="image" placeholder="Insert image file here"><br>
+        <label>Choose categorie:</label>
+        <input type="text" class="form-group" name="filter" placeholder="Use keywords to filter options">
+        <div class="buttonHolder">
+        <input type="submit" class="button" value="Submit">
+    </div>
+    </form>
+    <div class="Header">
+        <h3>Product Features Page</h3>
+        <p>Currently in Demo will be updated to include full running features once funding is secured, please invest :)</p>
+    </div>
 </body>
 </html>
