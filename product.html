@@ -5,6 +5,7 @@
     <header>
       <div class="boite">
         <div id="titre">
+        	<img alt="NP" title="NetPal logo" class="logo" width="48" height="48" style="float:left; width:48px;height:48px;" src="img/logo.jpg"> 
           <h1><span class="highlight">Netpal</span> Services</h1>
         </div>
         <nav>
@@ -20,44 +21,57 @@
     </header>
 <style>
     .Header {
-        padding: 60px;
-        text-align: center;
-        background: #1abc9c;
+        padding: 15px;
+        text-align: center; 
+        background: #DB612C;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
     }
     .row {
         display: flex;
         padding: 0 4px;
         flex-wrap: wrap;
+        text-align: center;
     }
     .column_1{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column_2{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column_3{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column_4{
         flex-basis: 20%;
         max-width: 20%;
         padding: 10px;
-        background: white;
         justify-content: space-around;
+        display:inline-block;
+        margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
     }
     .column img{
         margin:10px 10px 10px 10px;
@@ -103,7 +117,8 @@
     }
     .card .hover{
         image: transparent;
-        background-image: linear-gradient(Blue,white);
+        background-image: linear-gradient(#aab6c8,white);
+
     }
     .overlay-image {
  position: relative;
@@ -141,33 +156,61 @@
  opacity: 1;
 }
 form{
-    background-color: #42f598;
+    background-color: #F9AA5C;
 }
+/*Rasha's mofifications: my-form and form-group*/
+.my-form{
+	padding-top:20px;
+	padding-bottom: 20px;
+	padding-right: 400px;
+	padding-left: 400px;
+}
+
+.my-form .form-group{
+	padding-bottom: 15px;
+
+}
+.my-form label{
+	display:block;
+}
+.my-form input[type="text"]{
+	padding: 8px;
+	width:100%;à
+
+}
+
+.my-form input[type="submit"]{
+	background-color: #87260D;
+	color:#fff;
+	padding:10px 15px;
+	border: none;
+	width: 140px;
+	text-align: center;
+
+}
+.buttonHolder{
+	text-align: center;
+}
+.my-form input[type="submit"]:hover{
+	background:#757372;
+	color:#333;
+}
+/*end*/
 input[type=text] {
   width: 100%;
   padding: 12px 10px;
   margin: 8px 0;
   box-sizing: border-box;
+
 }
 </style>
 <script>
     
 </script>
-    <div class="Header">
-        <h1>Product Features Page</h1>
+   <div class="Header">
+        <h3>Product Features Page</h3>
         <p>Currently in Demo will be updated to include full running features once funding is secured, please invest :)</p>
     </div>
-    <form>
-        First name:<br>
-        <input type="text" name="name" value="Insert your full name"><br>
-        Last name:<br>
-        <input type="text" name="tags" value="Insert tags, split by commas. Avoid special characters"><br><br>
-        Insert Image:<br>
-        <input type="text" name="image" value="Insert image file here"><br><br>
-        In order to search please fill only the boxes below and then click submit<br>
-        <input type="text" name="filter" value="use keywords to filter options"><br><br>
-        <input type="submit" value="Submit">
-    </form>
     <div class="row">
         <div class="column_1">
             <div class="card">
@@ -439,5 +482,35 @@ input[type=text] {
         </div>
     </div>
 </div>
+ 
+    <form class="my-form">
+    	<label>Full name:</label>
+        <!--First name:<br>-->
+        <input type="text" class="form-group" name="name" placeholder="Insert your full name">
+        <label>Full name:</label>
+        <input type="text" class="form-group" name="tags" placeholder="Insert tags, split by commas. Avoid special characters">
+        <label>Select image file:</label>
+        <input type="text" class="form-group" name="image" placeholder="Insert image file here"><br>
+        <label>Choose categorie:</label>
+        <input type="text" class="form-group" name="filter" placeholder="Use keywords to filter options">
+        <div class="buttonHolder">
+        <input type="submit" class="button" value="Submit">
+    </div>
+    </form>
+    <footer id="fin">
+	<div id="info">
+<h3>INFORMATION</h3>
+<p>CONTACT US</p>
+<a href="contact.html" target="_blank" ><img alt="Gmail" title="NetPal on Gmail" class="synved-share-image synved-social-image synved-social-image-follow" width="48" height="48" style="display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none;" src="img/gmail.png"></a>
+<h5>1-800-NETP (1-800-6387)</h5>
+</div>
+<div id="follow">
+<p style="text-align: center"; >FOLLOW US</p>
+<a href="https://fb.me/NetPalapp" target="_blank" ><img alt="Facebook" title="Follow us on Facebook" class="synved-share-image synved-social-image synved-social-image-follow" width="48" height="48" style=" display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none; text-align: center;" src="img/facebook.png"></a>
+<a href="https://www.instagram.com/netpal.community/" target="_blank" ><img alt="instagram" title="Check out our instagram feed" class="synved-share-image synved-social-image synved-social-image-follow" width="48" height="48" style="display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none; text-align: center;" src="img/instagram.png"></a>
+<a href="https://www.linkedin.com/company/netpal
+" target="_blank" ><img alt="linkedin" title="NetPal on LinkedIn" class="synved-share-image synved-social-image synved-social-image-follow" width="48" height="48" style="display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none; text-align: center;" src="img/linkedin.png"></a>
+</div>
+</footer>
 </body>
 </html>
