@@ -420,6 +420,36 @@ input{
   width: 100%;
 }
 
+/*Rasha added (blocks)=> aboutR.html*/
+
+.block{
+	float:left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+/*global clr */
+.clr{
+	clear: both;
+}
+#main-block{
+	float:left;
+	width: 70%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+#side-block{
+	float:right;
+	width:30%;
+	color: #fff;
+	background-image:linear-gradient(black,#A52A2A);
+	padding:15px;
+	box-sizing: border-box;
+
+}
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
