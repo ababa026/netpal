@@ -208,7 +208,14 @@ header a:hover{
   	background-size:cover;
   	text-align:center;
 }
+
+#lumieres .boite h1{
+	margin-top:50px; 
+	}
 	
+#lumieres .boite img{
+	opacity:0.5; 
+	}	
 #newsletter{
 	padding:15px;
 	color:#ffffff;
@@ -251,10 +258,13 @@ header a:hover{
 
 footer{
 	padding:10px;
-	margin-top:10px;
+	margin:auto;
+	text-align:center;
 	color:#e6e6e6;
 	background-color:#990000;
 }
+
+
 
 .footer_2 {
 	padding:10px;
