@@ -16,7 +16,7 @@
 
 body{
 	font-family: 'Quicksand', sans-serif;
-	background-color:#F9F9F9;
+	background-image:linear-gradient(#fff,#a34b03);
 	margin:0;
 	padding:0;
 }
@@ -219,7 +219,15 @@ footer{
 	background-color:#990000;
 
 }
+#info{
+	padding: 15px;
+	box-sizing: border-box;
 
+}
+#follow{
+	padding: 15px;
+	box-sizing: border-box;
+}
 .footer .foot{
 	width: 45%;
 	float: left;
