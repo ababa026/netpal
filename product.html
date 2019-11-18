@@ -141,8 +141,28 @@
  opacity: 1;
 }
 form{
-    background-color: #42f598;
+    background-color: #F9AA5C;
 }
+/*Rasha's mofifications: my-form and form-group*/
+.my-form{
+	padding-top:20px;
+	padding-bottom: 20px;
+	padding-right: 500px;
+	padding-left: 500px;
+}
+
+.my-form .form-group{
+	padding-bottom: 15px;
+
+}
+.my-form label{
+	display:block;
+}
+.my-form input{
+	padding: 8px;
+	width:100%;
+}
+/*end*/
 input[type=text] {
   width: 100%;
   padding: 12px 10px;
@@ -157,15 +177,16 @@ input[type=text] {
         <h1>Product Features Page</h1>
         <p>Currently in Demo will be updated to include full running features once funding is secured, please invest :)</p>
     </div>
-    <form>
-        First name:<br>
-        <input type="text" name="name" value="Insert your full name"><br>
-        Last name:<br>
-        <input type="text" name="tags" value="Insert tags, split by commas. Avoid special characters"><br><br>
-        Insert Image:<br>
-        <input type="text" name="image" value="Insert image file here"><br><br>
-        In order to search please fill only the boxes below and then click submit<br>
-        <input type="text" name="filter" value="use keywords to filter options"><br><br>
+    <form class="my-form">
+    	<label>Full name:</label>
+        <!--First name:<br>-->
+        <input type="text" class="form-group" name="name" value="Insert your full name">
+        <label>Full name:</label>
+        <input type="text" class="form-group" name="tags" value="Insert tags, split by commas. Avoid special characters">
+        <label>Select image file:</label>
+        <input type="text" class="form-group" name="image" value="Insert image file here"><br>
+        <label>Choose categorie:</label>
+        <input type="text" class="form-group" name="filter" value="use keywords to filter options"><br><br>
         <input type="submit" value="Submit">
     </form>
     <div class="row">
