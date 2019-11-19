@@ -424,10 +424,10 @@ input{
 
 .block{
 	float:left;
-	width: 45%;
+	width: 70%;
 	border: 1px solid #9B2C2C;
 	padding: 10px;
-	margin: 20px;
+	margin: 10px 100px;
 	box-sizing: border-box;
 	color:#9B2C2C;
 }
