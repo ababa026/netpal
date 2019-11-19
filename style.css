@@ -91,7 +91,7 @@ header a{
 	color:white;
 	text-decoration:none;
 	font-size:16px; 
-	padding-left:20px;
+	padding-left:5px;
 }
 
 header ul{
@@ -424,10 +424,12 @@ input{
 
 .block{
 	float:left;
-	width: 33.3%;
-	border: 1px solid #ccc;
+	width: 45%;
+	border: 1px solid #9B2C2C;
 	padding: 10px;
+	margin: 20px;
 	box-sizing: border-box;
+	color:#9B2C2C;
 }
 /*global clr */
 .clr{
@@ -446,6 +448,8 @@ input{
 	background-image:linear-gradient(black,#A52A2A);
 	padding:15px;
 	box-sizing: border-box;
+	margin-top: 60px;
+	border-radius: 20px;
 
 }
 
